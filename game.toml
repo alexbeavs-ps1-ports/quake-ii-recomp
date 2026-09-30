@@ -7,6 +7,9 @@ id = "SLUS-00757"
 region = "USA"
 players = 4
 exe = "disc/SLUS_007.57"
+disc = "disc/Quake II (USA).cue"
+discs = ["disc/Quake II (USA).cue"]
+disc_serials = ["SLUS-00757"]
 load_address = "0x80018000"
 entry_pc = "0x800861A4"
 text_size = "0x0009B000"
@@ -25,8 +28,10 @@ known_md5 = [
 known_sha1 = [
   "f936e7cc477b0daf456c86eff86acc82e7f549ce",
 ]
+known_crc32 = ["efbd3060"]
 
 [recompiler]
+bios_config = "psxrecomp/bios/SCPH1001.toml"
 seeds = "seeds/ghidra_funcs.txt"
 out_dir = "generated"
 strict = true
